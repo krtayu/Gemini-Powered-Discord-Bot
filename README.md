@@ -1,1 +1,0 @@
-# Gemini-Powered-Discord-Bot
