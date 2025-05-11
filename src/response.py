@@ -11,7 +11,6 @@ async def send_message(chatbot: genai.ChatSession, message: str, thread: discord
             
         text = response.text
         
-        # Discord limit about 2000 characters for a message
         while len(text) > 2000:
             temp = text[:2000]
             text = text[2000:]
