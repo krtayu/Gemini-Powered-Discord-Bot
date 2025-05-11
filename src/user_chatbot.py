@@ -140,12 +140,12 @@ class UserChatbot():
 
   def set_prompt(self, prompt: str):
     if prompt.endswith(','):
-        prompt = prompt[:-1]  # Remove trailing comma if present
+        prompt = prompt[:-1]  
 
     try:
         self.prompt = json.loads(prompt)
     except json.decoder.JSONDecodeError:
-        self.prompt = []  # Set prompt to an empty list if there's an error
+        self.prompt = [] 
 
 
   def set_temperature(self, temperature):
