@@ -38,7 +38,6 @@ async def on_ready():
     except Exception as e:
         logger.error(f"Error：{e}")
 
-# Get discord_bot.log file
 @commands.is_owner()
 @bot.command()
 async def getlog(ctx):
